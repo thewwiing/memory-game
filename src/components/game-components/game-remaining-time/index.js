@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 
-const GameTimeRemaining = (props) => {
+const GameRemainingTime = (props) => {
     let [counter, setCounter] = useState(5);
     const {
         stop
@@ -31,8 +31,8 @@ const GameTimeRemaining = (props) => {
     );
 };
 
-GameTimeRemaining.propTypes = {
+GameRemainingTime.propTypes = {
     stop: PropTypes.func.isRequired
 };
 
-export default GameTimeRemaining;
+export default GameRemainingTime;

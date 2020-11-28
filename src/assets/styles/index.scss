@@ -1,0 +1,10 @@
+//Shared styles and mixins
+@import './shared/application';
+@import './shared/mixins';
+@import './shared/reset';
+@import './shared/variables';
+
+//Game styles
+@import './modules/game';
+//Results styles;
+@import './modules/results';

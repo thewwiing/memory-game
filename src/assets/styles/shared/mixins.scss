@@ -1,0 +1,42 @@
+@mixin DisplayFlex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin DisplayFlexCustom($flexDirection: null, $justifyContent: null, $alignItems: null) {
+  @include DisplayFlex();
+  @if ($flexDirection  != null) { flex-direction:  $flexDirection }
+  @if ($justifyContent != null) { justify-content: $justifyContent }
+  @if ($alignItems     != null) { align-items:     $alignItems }
+}
+
+@mixin FlexWrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin Transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@mixin Transition($time) {
+  -webkit-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -ms-transition: all $time linear;
+  -o-transition: all $time linear;
+  transition: all $time linear;
+}
+
+@mixin BorderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}

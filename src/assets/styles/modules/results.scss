@@ -1,0 +1,36 @@
+.results {
+  margin: 20px;
+
+  &__title {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__container {
+    table, td, th {
+      border: 1px solid black;
+    }
+    th {
+      width: 200px;
+      padding: 5px;
+      text-align: start;
+      font-weight: 400;
+    }
+  }
+
+  &__item {
+    padding: 5px;
+    span:first-child {
+      margin-right: 10px;
+    }
+    span:last-child {
+
+    }
+  }
+
+  &__btn {
+    color: #fff;
+    background: $rose;
+  }
+}
